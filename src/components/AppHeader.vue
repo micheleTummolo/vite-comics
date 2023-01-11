@@ -4,10 +4,10 @@ export default {
 }
 </script>
 <template lang="">
-  <div>
-    
-  </div>
+    <div>
+        
+    </div>
 </template>
-<style lang="scss">
-@use './styles/generals.scss' as *
+<style lang="">
+    
 </style>
