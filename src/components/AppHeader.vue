@@ -85,8 +85,7 @@ header {
 
 
     .header_container {
-        width: 1000px;
-        margin: 0 auto;
+        @include main_center;
         @include flex_between;
 
         .logo_container {

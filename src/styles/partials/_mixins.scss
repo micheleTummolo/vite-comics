@@ -1,3 +1,6 @@
+@use './variables' as *;
+
+/* Flex */
 @mixin flex_align_center {
     display: flex;
     align-items: center;
@@ -6,4 +9,25 @@
 @mixin flex_between {
     display: flex;
     justify-content: space-between;
+}
+
+@mixin main_center {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+@mixin button_blu {
+    border: 2px solid $primary_color;
+    background-color: transparent;
+    padding: .6rem;
+    cursor: pointer;
+
+    a {
+        color: $color_white;
+        font-weight: 400;
+    }
+
+    &:hover {
+        background-color: $primary_color;
+    }
 }
