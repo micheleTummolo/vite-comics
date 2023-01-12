@@ -1,1 +1,1 @@
-# DC Comics template
+# DC template
