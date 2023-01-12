@@ -91,8 +91,14 @@ export default {
 <template lang="">
     <main>
         <div class="main_container">
+            <div class="current_series_label">
+                <h2>CURRENT SERIES</h2>
+            </div>
             <div class="card_container">
                 <Card v-for="(item, index) in cards" :img="item.thumb" :title="item.series" :key="index"></Card>
+            </div>
+            <div class="button_container">
+                <button><a href="#">LOAD MORE</a></button>
             </div>
         </div>
     </main>
@@ -104,13 +110,34 @@ export default {
 main {
     background-color: rgb(28, 28, 28);
 
+
     .main_container {
         @include main_center;
         padding: 2rem 0;
+        position: relative;
+
+        .current_series_label {
+            background-color: $primary_color;
+            width: fit-content;
+            color: $color_white;
+            padding: .3rem 1.5rem;
+            position: absolute;
+            top: -20px;
+            left: 0;
+        }
 
         .card_container {
             @include flex_between;
             flex-wrap: wrap;
+        }
+
+        .button_container {
+            display: flex;
+            justify-content: center;
+
+            button {
+                @include button_bg_blu_sm;
+            }
         }
     }
 }

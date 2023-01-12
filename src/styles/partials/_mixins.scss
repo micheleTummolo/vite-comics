@@ -31,3 +31,20 @@
         background-color: $primary_color;
     }
 }
+
+@mixin button_bg_blu_sm {
+    border: 2px solid $primary_color;
+    background-color: $primary_color;
+    padding: .2rem 2rem;
+    cursor: pointer;
+
+    a {
+        color: $color_white;
+        font-weight: 500;
+        font-size: .7rem;
+    }
+
+    &:hover {
+        background-color: transparent;
+    }
+}

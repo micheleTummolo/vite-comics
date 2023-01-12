@@ -75,6 +75,9 @@ export default {
             </nav>
         </div>
     </header>
+    <div class="jumbotron">
+        <img src="../assets/images/jumbotron.jpg" alt="">
+    </div>
 </template>
 <style lang="scss">
 @use '../styles/partials/variables' as *;
@@ -133,5 +136,18 @@ header {
     }
 
 
+}
+
+.jumbotron {
+    width: 100%;
+    height: 17rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: top;
+    }
 }
 </style>

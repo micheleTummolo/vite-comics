@@ -33,6 +33,10 @@ export default {
             height: calc((80vw / 6) - 1rem);
             object-position: top;
             display: block;
+
+            &:hover {
+                filter: brightness(50%);
+            }
         }
     }
 
